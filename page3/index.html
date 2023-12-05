@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>Signin Template · Bootstrap v4.6</title>
+
+<!-- <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/sign-in/"> -->
+<!-- Bootstrap core CSS -->
+<!-- <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <style>
+    /*.bd-placeholder-img {*/
+        /*font-size: 1.125rem;*/
+        /*text-anchor: middle;*/
+        /*-webkit-user-select: none;*/
+        /*-moz-user-select: none;*/
+        /*-ms-user-select: none;*/
+        /*user-select: none;*/
+    /*}*/
+
+    /*@media (min-width: 768px) {*/
+        /*.bd-placeholder-img-lg {*/
+            /*font-size: 3.5rem;*/
+        /*}*/
+    /*}*/
+
+        .common_body{
+            max-width: 800px;
+            margin: 0px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .div1{
+            width: 100%;
+            height: 450px;
+            display: flex;
+            flex-direction: column;
+            /* background-color: antiquewhite; */
+            background-color: white;
+            border-style: solid;
+            border-radius: 10px;
+            border-color: #3d3d3d;
+            border-width: 2px;
+            margin-top: 20px;
+        
+        }
+
+
+
+        .div3{
+            width: 200px;
+            height: 300px;
+            background-color: teal;
+            margin-top: 20px;
+        }
+
+        .div1_row1{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .div1_row1_left{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            font-size: 18px;
+            margin-left: 50px;
+        }
+
+        .div1_row1_left_row1{
+            margin-top: 6px;
+            margin-left: 6px;
+        }
+
+        .div1_row1_left_row2{
+            margin-top: 6px;
+            margin-left: 6px;
+        }
+
+        .div1_row1_left_row3{
+            margin-top: 6px;
+            margin-left: 6px;
+            font-weight: 600;
+        }
+
+        .div1_row1_right{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            font-size: 18px;
+            align-items: flex-end;
+            margin-right: 100px;
+        }
+
+        .div1_row1_right_row1{
+            margin-top: 6px;
+            color: #d65829;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .div1_row1_right_row2{
+            margin-top: 10px;
+        }
+
+        .div1_row1_right_row3{
+            margin-top: 10px;
+        }
+
+        .div1_row1_right_row4{
+            margin-top: 10px;
+        }
+
+        .div1_row2{
+            margin-left: 50px;
+            margin-top: 20px;
+            font-weight: 500;
+        }
+        .div1_row2_row1{
+            font-size: 14px;
+        }
+        .div1_row2_row2{
+            font-size: 16px;
+            margin-top: 4px;
+            font-weight: 600;
+        }
+
+
+        .div1_row3{
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+        }
+
+        .div1_row3_col1{
+            margin-left: 50px;
+        }
+
+        .div1_row3_col1_row1{
+
+        }
+
+        .div1_row3_col2{
+            margin-left: 90px;
+        }
+
+        .div1_row3_col1_row2{
+            margin-top: 20px;
+        }
+
+        .div1_row3_col1_row2{
+            /* margin-top: 20px; */
+        }
+        .div1_row3_col2_row2{
+            margin-top: 20px;
+        }
+
+
+        .div1_row3_col3{
+            /* margin-left: 150px; */
+            flex-grow: 1;
+            display: flex;
+            /* flex-direction: column; */
+            /* align-items: flex-end; */
+            justify-content: flex-end;
+            margin-top: -30px;
+            margin-right: 100px;
+        }
+
+
+
+        .div2{
+            width: 100%;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            /* background-color: #ccc; */
+            background-color: white;
+            border-style: solid;
+            border-width: 2px;
+            border-radius: 10px;
+            border-color: #3d3d3d;
+            margin-top: 20px;
+            border-radius: 10px;
+            align-items: center;
+        }
+
+        .div2_row1{
+            margin-top: 20px;
+        }
+
+        .div2_row2{
+            font-size: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: #1c1c1c;
+            font-weight: 600;
+        }
+
+
+        .div2_row3{
+            width: 100%;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffaf34;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            font-size: 20px;
+            font-weight: 600;
+            color: #281900;
+        }
+
+        .div2_row3_row1{
+            /* margin-top: px; */
+        }
+
+        .div2_row3_row2{
+            margin-top: 10px;
+        }
+
+        .div2_row3_row3{
+            margin-top: 10px;
+        }
+
+
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <!-- <link href="signin.css" rel="stylesheet"> -->
+</head>
+
+<body class="common_body">
+
+    <!--<form class="form-signin">-->
+        <!--<img class="mb-4" src="../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">-->
+        <!--<h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>-->
+        <!--<label for="inputEmail" class="sr-only">Email address</label>-->
+        <!--<input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>-->
+        <!--<label for="inputPassword" class="sr-only">Password</label>-->
+        <!--<input type="password" id="inputPassword" class="form-control" placeholder="Password" required>-->
+        <!--<div class="checkbox mb-3">-->
+        <!--<label>-->
+        <!--<input type="checkbox" value="remember-me"> Remember me-->
+        <!--</label>-->
+        <!--</div>-->
+        <!--<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>-->
+        <!--<p class="mt-5 mb-3 text-muted">&copy; 2017-2022</p>-->
+    <!--</form>-->
+
+    <div class="div1">
+        <div class="div1_row1">
+
+            <div class="div1_row1_left">
+                <div class="div1_row1_left_row1">
+                    <img src="./image/icon.png">
+                </div>
+                <div class="div1_row1_left_row2">
+                    联讯城精密科技(深圳)有限公司
+                </div>
+                <div class="div1_row1_left_row3">
+                    Lian Xun Cheng Jing Mi KeJi
+                </div>
+            </div>
+
+            <div class="div1_row1_right">
+                <div class="div1_row1_right_row1">
+                    Kevin Xiong
+                </div>
+                <div class="div1_row1_right_row2">
+                    Head Engineer
+                </div>
+                <div class="div1_row1_right_row3">
+                    +86 13012345678
+                </div>
+                <div class="div1_row1_right_row4">
+                    <img src="./image/qrcode1.png">
+                </div>
+            </div>
+        </div>
+        <div class="div1_row2">
+            <div class="div1_row2_row1">
+                Floor 3th Building C No.4, Kukeng Tongfuyu industrial Zone, Guanlan, Longhua, Shenzhen, China
+            </div>
+            <div class="div1_row2_row2">
+                广东省深圳市龙华区观澜库坑同富裕工业园4号C栋3楼
+            </div>
+        </div>
+        <div class="div1_row3">
+            <div class="div1_row3_col1">
+                <div class="div1_row3_col1_row1">
+                    Kevin@lxcet.com
+                </div>
+                <div class="div1_row3_col1_row2">
+                    +86 0755 12345678
+                </div>
+            </div>
+            <div class="div1_row3_col2">
+                <div class="div1_row3_col2_row1">
+                    www.lxcet.com
+                </div>
+                <div class="div1_row3_col2_row2">
+                    +86 0755 12345678
+                </div>
+            </div>
+            <div class="div1_row3_col3">
+                <div>
+                    <img src="./image/qrcode2.png">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="div2">
+        <div class="div2_row1">
+            <img src="./image/icon.png">
+        </div>
+        <div class="div2_row2">
+            www.lxcet.com
+        </div>
+
+        <div class="div2_row3">
+            <div class="div2_row3_row1">Innovative development, Shared future</div>
+            <div class="div2_row3_row2">Excellence, Casting quality model</div>
+            <div class="div2_row3_row3">The provider of precision manufacturing total solutions</div>
+        </div>
+    </div>
+
+    <!-- <div class="div3">
+
+    </div> -->
+
+</body>
+
+</html>
